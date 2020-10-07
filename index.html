@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <title>Movie List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>What movie do you want to see?</h1>
+        <p>Add the movie to the list</p>
+        <!-- input form for the movies -->
+        <form id="book-form">
+            <div>
+                <label for="title">Title</label>
+                <input placeholder="E.T." type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="director">Director</label>
+                <input placeholder="Steven Spielberg" type="text" id="director" class="u-full-width">
+            </div>
+            <div>
+                <label for="year">Year</label>
+                <input placeholder="1982" type="text" id="year" class="u-full-width">
+            </div>
+            <div>
+                <!-- submit button -->
+                <input type="submit" value="submit" class="u-full-width">
+            </div>
+        </form>
+        
+        <table class="u-full-width">
+            <!-- table head -->
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Year</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <!-- table body -->
+            <!-- Data will be dynamically inserted here below -->
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    
+
+    <script src="dist/index.js"></script>
+</body>
+</html>
