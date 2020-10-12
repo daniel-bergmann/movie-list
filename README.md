@@ -2,8 +2,6 @@
 A project in the academy of web development
 
 
-This is my ES6 project.
-
 I have made a movie list application that you can use to add movies you want to watch.
 
 After you watched them you are able to remove them from the list aswell.
